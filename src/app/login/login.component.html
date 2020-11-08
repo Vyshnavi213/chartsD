@@ -1,0 +1,42 @@
+<!-- <h2 [style.color]="'red'"> Hello World</h2>
+<h2 [style.color]="highlightColor"> Hello World</h2>
+<h2 style="color: orange;"> Hello World</h2>
+<h2 [ngStyle]="selectedClasses"> Hello heellloo World</h2>
+
+<input [id] = "myId" type = "text" value = "Heeeloo">
+<input disabled [id] = "myId" type = "text" value = "Heeeloo">
+
+<input id = "{{classsel}}" type = "text" value = "Hoo">
+
+<button (click) = "onClick($event)">Greet</button> -->
+
+
+<!-- <input #myInput type = "text">
+<button (click) = logMessage(myInput.value)>Log</button> -->
+
+<!-- 
+<input [(ngModel)] = "name" type = "text" >
+{{name}} -->
+
+
+<!-- 
+<h2 *ngIf = "show; else elseBlock"> Hello</h2>
+<ng-template #elseBlock><h2>Name is hidden</h2></ng-template> -->
+
+
+<div *ngIf="show; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+  <h2>Name is not hidden</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h2>Name is hidden</h2>
+</ng-template>
+
+<div *ngFor = "let color of colors; even as e">
+  <h2>
+    {{e}}
+    You have picked {{color}} colour
+  </h2>
+</div>

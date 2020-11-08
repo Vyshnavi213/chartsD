@@ -1,0 +1,11 @@
+<div>
+    <form [formGroup]="lobselection" (ngSubmit)="onSubmit()">
+        <p>Select LOB</p>
+        <select formControlName="lob">
+            <option value="cs">CS</option>
+            <option value="er">ER</option>
+            <option value="mr">MR</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</div>
